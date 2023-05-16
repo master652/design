@@ -95,7 +95,20 @@ class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: TextButton(onPressed: () {}, child: Text('Bienvenido')),
+      color: Color(0xff51c3de),
+      child: TextButton(
+        onPressed: () {},
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          child: Text(
+            'Bienvenido',
+            style: TextStyle(
+                color: Colors.white, fontSize: 30, fontWeight: FontWeight.w300),
+          ),
+        ),
+        style: TextButton.styleFrom(
+            backgroundColor: Color(0xff51c3de), shape: StadiumBorder()),
+      ),
     );
   }
 }
